@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>404 - Not Found</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      background-color: #111;
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      color: #FF9E58;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0.5rem 0;
+    }
+
+    .gray {
+      color: #aaa;
+      max-width: 400px;
+    }
+
+    .btn-group {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .btn {
+      padding: 0.6rem 1.5rem;
+      border-radius: 9999px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-home {
+      background-color: #FF9E58;
+      color: black;
+      border: none;
+    }
+
+    .btn-home:hover {
+      background-color: #ff7e20;
+    }
+
+    .btn-refresh {
+      background-color: transparent;
+      color: #FF9E58;
+      border: 2px solid #FF9E58;
+    }
+
+    .btn-refresh:hover {
+      background-color: #222;
+    }
+
+    .small-note {
+      font-size: 0.75rem;
+      color: #555;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <h1>404</h1>
+  <p class="text-xl"><strong>Oops! You’ve reached the void 👻</strong></p>
+  <p class="gray">Either this page doesn’t exist, or it got high and wandered off... 🤷‍♂️</p>
+  <div class="btn-group">
+    <button class="btn btn-home" onclick="window.location.href='https://smokeparadise.online'">🏠 Go Home</button>
+    <button class="btn btn-refresh" onclick="window.location.href='https://smokeparadise.online'">🔄 Refresh</button>
+  </div>
+  <p class="small-note">(Or just pretend this never happened...)</p>
+</body>
+</html>
