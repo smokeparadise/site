@@ -3,15 +3,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>404</title>
-    <meta http-equiv="refresh" content="0; URL=/" />
+    <title>Redirecting...</title>
     <script>
-      // Reconstruct the intended path for SPA routing
-      const redirectTo = window.location.origin + '/site' + window.location.pathname;
-      window.location.replace(redirectTo);
+      // Get full path after "/site"
+      const path = window.location.pathname.split("/site")[1] || "/";
+      // Avoid infinite loop
+      if (!window.location.pathname.startsWith("/site/")) {
+        window.location.replace("/site" + path);
+      }
     </script>
   </head>
-  <body>
-    <p>Redirecting...</p>
+  <body style="background:black;color:white;display:flex;justify-content:center;align-items:center;height:100vh;">
+    <div>
+      <h1>Redirecting you to the paradise... 🌀</h1>
+      <p>If you're stuck, <a href="/site" style="color:#FF9E58;">click here</a>.</p>
+    </div>
   </body>
 </html>
