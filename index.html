@@ -2,51 +2,55 @@
 <html lang="en">
   <head>
      <!-- ✅ LocalBusiness JSON-LD Schema -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Smoke Paradise",
-    "image": "https://smokeparadise.online/cover.jpg",
-    "@id": "https://smokeparadise.online",
-    "url": "https://smokeparadise.online",
-    "telephone": "+1-202-555-0199",
-    "priceRange": "$$",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1234 U St NW",
-      "addressLocality": "Washington",
-      "addressRegion": "DC",
-      "postalCode": "20009",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 38.9162,
-      "longitude": -77.0283
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "10:00",
-        "closes": "23:00"
-      }
-    ],
-    "sameAs": [
-      "https://www.instagram.com/smokeparadise",
-      "https://www.facebook.com/smokeparadise"
-    ]
-  }
-  </script>
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["CannabisStore", "TobaccoShop", "Store", "LocalBusiness"],
+  "name": "Smoke Paradise",
+  "image": "https://smokeparadise.online/cover.jpg",
+  "@id": "https://smokeparadise.online",
+  "url": "https://smokeparadise.online",
+  "telephone": "+12024769001",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1234 U St NW",
+    "addressLocality": "Washington",
+    "addressRegion": "DC",
+    "postalCode": "20009",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.87732,
+    "longitude": -77.005876
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "10:00",
+      "closes": "23:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/smokeparadise.us",
+    "https://www.facebook.com/smokeparadise.us"
+  ],
+  "servesCuisine": "Store",
+  "paymentAccepted": "Cash,Bank Of America, Zelle, Payment Cards",
+  "description": "Smoke Paradise is Washington DC’s trusted weed store and smoke shop. Shop cannabis, THC gummies, vapes, and smoking accessories near you with fast delivery and premium quality."
+}
+</script>
+
      <!-- ✅ SEO Meta Tags -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
